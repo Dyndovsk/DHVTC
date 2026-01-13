@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детям | ДХВ "Твоя Церковь"</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-mountain-sun"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">ДХВ "Твоя Церковь"</span>
+                    <span class="logo-subtitle">Детский христианский выезд</span>
+                </div>
+            </a>
+            <button class="menu-toggle" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="children.html" class="active"><i class="fas fa-child"></i> Детям</a></li>
+                <li><a href="staff.html"><i class="fas fa-users"></i> Сотрудникам</a></li>
+                <li><a href="media.html"><i class="fas fa-photo-video"></i> Медиаархив</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Информация для детей и родителей</h1>
+            <p>Все необходимое для подготовки к выезду</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Список вещей -->
+        <section id="items" class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-suitcase"></i> Список вещей</h2>
+                <p class="section-subtitle">Что взять с собой в лагерь</p>
+            </div>
+
+            <div class="categories">
+                <button class="category-btn active" data-category="all">Все вещи</button>
+                <button class="category-btn" data-category="clothes">Одежда</button>
+                <button class="category-btn" data-category="hygiene">Гигиена</button>
+                <button class="category-btn" data-category="other">Разное</button>
+            </div>
+
+            <div class="checklist-container">
+                <!-- Одежда -->
+                <div class="checklist-category" data-category="clothes">
+                    <h3><i class="fas fa-tshirt"></i> Одежда</h3>
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item1">
+                            <label for="item1">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Спортивный костюм (2-3 комплекта)</span>
+                                <span class="item-note">Для активных игр</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item2">
+                            <label for="item2">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Футболки (5-7 штук)</span>
+                                <span class="item-note">Хлопковые</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item3">
+                            <label for="item3">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Шорты/юбки (2-3 шт)</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item4">
+                            <label for="item4">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Джинсы/брюки (2 пары)</span>
+                                <span class="item-note">На прохладные вечера</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item5">
+                            <label for="item5">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Теплый свитер/кофта</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item6">
+                            <label for="item6">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Куртка ветровка</span>
+                                <span class="item-note">С капюшоном</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item7">
+                            <label for="item7">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Пижама/одежда для сна</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item8">
+                            <label for="item8">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Нижнее бельё (10 комплектов)</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item9">
+                            <label for="item9">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Носки (10 пар)</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item10">
+                            <label for="item10">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Головной убор (кепка/панама)</span>
+                                <span class="item-note">От солнца</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Гигиена -->
+                <div class="checklist-category" data-category="hygiene">
+                    <h3><i class="fas fa-soap"></i> Гигиена</h3>
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item11">
+                            <label for="item11">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Зубная щетка и паста</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item12">
+                            <label for="item12">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Мыло/гель для душа</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item13">
+                            <label for="item13">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Шампунь</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item14">
+                            <label for="item14">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Мочалка</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item15">
+                            <label for="item15">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Полотенце (2-3 шт)</span>
+                                <span class="item-note">Для душа и для пляжа</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item16">
+                            <label for="item16">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Расческа/зеркало</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item17">
+                            <label for="item17">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Крем от солнца (SPF 30+)</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item18">
+                            <label for="item18">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Средство от комаров</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Разное -->
+                <div class="checklist-category" data-category="other">
+                    <h3><i class="fas fa-star"></i> Разное</h3>
+                    <div class="checklist">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item19">
+                            <label for="item19">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Рюкзак/сумка</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item20">
+                            <label for="item20">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Бутылка для воды</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item21">
+                            <label for="item21">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Фонарик</span>
+                                <span class="item-note">С батарейками</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item22">
+                            <label for="item22">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Блокнот и ручка</span>
+                                <span class="item-note">Для записей</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item23">
+                            <label for="item23">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Библия</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item24">
+                            <label for="item24">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Любимая игрушка/книга</span>
+                                <span class="item-note">Необязательно</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checklist-actions">
+                <button id="printBtn" class="btn btn-primary">
+                    <i class="fas fa-print"></i> Распечатать список
+                </button>
+                <button id="checkAllBtn" class="btn btn-secondary">
+                    <i class="fas fa-check-double"></i> Отметить всё
+                </button>
+                <button id="uncheckAllBtn" class="btn btn-outline">
+                    <i class="fas fa-undo"></i> Снять отметки
+                </button>
+            </div>
+        </section>
+
+        <!-- Документы -->
+        <section id="documents" class="section bg-light">
+            <div class="section-header">
+                <h2><i class="fas fa-file-alt"></i> Необходимые документы</h2>
+                <p class="section-subtitle">Документы для заполнения и ознакомления</p>
+            </div>
+
+            <div class="documents-grid">
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3>Заявление от родителей</h3>
+                    <p>Обязательный документ для участия ребенка в выезде</p>
+                    <div class="document-actions">
+                        <a href="docs/application.pdf" class="btn btn-small" download>
+                            <i class="fas fa-download"></i> Скачать (PDF)
+                        </a>
+                        <a href="docs/application.docx" class="btn btn-small btn-outline" download>
+                            <i class="fas fa-download"></i> Word
+                        </a>
+                    </div>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-heart-pulse"></i>
+                    </div>
+                    <h3>Медицинская справка</h3>
+                    <p>Справка формы 079/у с отметками о прививках</p>
+                    <div class="document-actions">
+                        <a href="docs/medical_form.pdf" class="btn btn-small" download>
+                            <i class="fas fa-download"></i> Образец
+                        </a>
+                        <a href="docs/medical_info.pdf" class="btn btn-small btn-outline" download>
+                            <i class="fas fa-info-circle"></i> Требования
+                        </a>
+                    </div>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Согласие на обработку данных</h3>
+                    <p>Согласие на фото/видеосъемку и обработку персональных данных</p>
+                    <div class="document-actions">
+                        <a href="docs/consent.pdf" class="btn btn-small" download>
+                            <i class="fas fa-download"></i> Скачать
+                        </a>
+                    </div>
+                </div>
+
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3>Памятка для родителей</h3>
+                    <p>Правила пребывания и полезная информация</p>
+                    <div class="document-actions">
+                        <a href="docs/rules.pdf" class="btn btn-small" download>
+                            <i class="fas fa-download"></i> Читать
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Важная информация -->
+        <section class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-info-circle"></i> Важная информация</h2>
+            </div>
+
+            <div class="alerts">
+                <div class="alert alert-warning">
+                    <div class="alert-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="alert-content">
+                        <h4>Лекарства и медицинские препараты</h4>
+                        <p>Все необходимые лекарства передаются в медицинский пункт с указанием дозировки и времени приема. Прием лекарств возможен только с заявлением от родителей и в оригинальной упаковке!</p>
+                    </div>
+                </div>
+
+                <div class="alert alert-info">
+                    <div class="alert-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="alert-content">
+                        <h4>Связь с детьми</h4>
+                        <p>Телефоны детей собираются на хранение и выдаются в установленное время для связи с родителями. Родителям будет предоставлен телефон дежурного вожатого для экстренной связи.</p>
+                    </div>
+                </div>
+
+                <div class="alert alert-success">
+                    <div class="alert-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <div class="alert-content">
+                        <h4>Что не стоит брать</h4>
+                        <p>Не рекомендуется брать: дорогие украшения, крупные суммы денег, скоропортящиеся продукты, колющие и режущие предметы, электронные гаджеты (кроме телефона).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-mountain-sun"></i>
+                        <div>
+                            <h3>ДХВ "Твоя Церковь"</h3>
+                            <p>Детский христианский выезд</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <a href="index.html">Главная</a>
+                    <a href="children.html">Детям</a>
+                    <a href="staff.html">Сотрудникам</a>
+                    <a href="media.html">Медиаархив</a>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon vk"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 ДХВ "Твоя Церковь". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/children.js"></script>
+</body>
+</html>
