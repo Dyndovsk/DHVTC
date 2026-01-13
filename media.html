@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиаархив | ДХВ "Твоя Церковь"</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/css/lightgallery-bundle.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-mountain-sun"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">ДХВ "Твоя Церковь"</span>
+                    <span class="logo-subtitle">Детский христианский выезд</span>
+                </div>
+            </a>
+            <button class="menu-toggle" aria-label="Меню">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="children.html"><i class="fas fa-child"></i> Детям</a></li>
+                <li><a href="staff.html"><i class="fas fa-users"></i> Сотрудникам</a></li>
+                <li><a href="media.html" class="active"><i class="fas fa-photo-video"></i> Медиаархив</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Заголовок страницы -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Медиаархив выездов</h1>
+            <p>Воспоминания, которые остаются с нами навсегда</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Годы-вкладки -->
+        <section class="section">
+            <div class="years-tabs">
+                <button class="year-tab active" data-year="2025">2025</button>
+                <button class="year-tab" data-year="2024">2024</button>
+                <button class="year-tab" data-year="2023">2023</button>
+                <button class="year-tab" data-year="2022">2022</button>
+                <button class="year-tab" data-year="2021">2021</button>
+                <button class="year-tab" data-year="older">Архив 2015-2020</button>
+            </div>
+
+            <!-- Статистика -->
+            <div class="stats">
+                <div class="stat-item">
+                    <i class="fas fa-images"></i>
+                    <div>
+                        <span class="stat-number">1,245</span>
+                        <span class="stat-label">Фотографий</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-video"></i>
+                    <div>
+                        <span class="stat-number">87</span>
+                        <span class="stat-label">Видеороликов</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <div>
+                        <span class="stat-number">11</span>
+                        <span class="stat-label">Выездов</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-smile"></i>
+                    <div>
+                        <span class="stat-number">2,500+</span>
+                        <span class="stat-label">Счастливых детей</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Галерея 2025 -->
+            <div class="year-gallery active" id="gallery-2025">
+                <div class="gallery-header">
+                    <h2><i class="fas fa-calendar-star"></i> Выезд 2025</h2>
+                    <p class="gallery-subtitle">"В поисках сокровищ" - 15-25 июля 2025</p>
+                </div>
+
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="photo">Фото</button>
+                    <button class="filter-btn" data-filter="video">Видео</button>
+                    <button class="filter-btn" data-filter="activities">Мероприятия</button>
+                    <button class="filter-btn" data-filter="nature">Природа</button>
+                    <button class="filter-btn" data-filter="creative">Творчество</button>
+                </div>
+
+                <div class="gallery-grid" id="lightgallery-2025">
+                    <!-- Фото 1 -->
+                    <a href="images/2025/group_photo.jpg" class="gallery-item" data-category="photo activities" data-subtitle="Групповое фото всех участников">
+                        <div class="gallery-thumb">
+                            <img src="images/2025/group_photo_thumb.jpg" alt="Групповое фото выезда 2025" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Групповое фото</h4>
+                            <p>Все участники выезда 2025 года. 156 детей и 32 сотрудника.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> 20 июля 2025</span>
+                        </div>
+                    </a>
+
+                    <!-- Видео 1 -->
+                    <a href="https://www.youtube.com/watch?v=example1" class="gallery-item video-item" data-category="video activities" data-subtitle="Утреннее прославление">
+                        <div class="gallery-thumb">
+                            <div class="video-thumb">
+                                <img src="images/2025/morning_worship_thumb.jpg" alt="Утреннее прославление" loading="lazy">
+                                <div class="video-play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Утреннее прославление</h4>
+                            <p>Начало дня с песнями и молитвой. Музыкальная группа 2025.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> 16 июля 2025</span>
+                        </div>
+                    </a>
+
+                    <!-- Фото 2 -->
+                    <a href="images/2025/sports_day.jpg" class="gallery-item" data-category="photo activities" data-subtitle="Спортивные соревнования">
+                        <div class="gallery-thumb">
+                            <img src="images/2025/sports_day_thumb.jpg" alt="Спортивный день" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Спортивный день</h4>
+                            <p>Командные соревнования и веселые старты.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> 18 июля 2025</span>
+                        </div>
+                    </a>
+
+                    <!-- Фото 3 -->
+                    <a href="images/2025/campfire.jpg" class="gallery-item" data-category="photo activities" data-subtitle="Вечер у костра">
+                        <div class="gallery-thumb">
+                            <img src="images/2025/campfire_thumb.jpg" alt="Вечер у костра" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Вечер у костра</h4>
+                            <p>Песни под гитару, истории и общение у костра.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> 22 июля 2025</span>
+                        </div>
+                    </a>
+
+                    <!-- Видео 2 -->
+                    <a href="https://www.youtube.com/watch?v=example2" class="gallery-item video-item" data-category="video creative" data-subtitle="Творческая мастерская">
+                        <div class="gallery-thumb">
+                            <div class="video-thumb">
+                                <img src="images/2025/art_workshop_thumb.jpg" alt="Творческая мастерская" loading="lazy">
+                                <div class="video-play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Творческая мастерская</h4>
+                            <p>Дети создают поделки на мастер-классах.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> 19 июля 2025</span>
+                        </div>
+                    </a>
+
+                    <!-- Фото 4 -->
+                    <a href="images/2025/nature_walk.jpg" class="gallery-item" data-category="photo nature" data-subtitle="Прогулка по лесу">
+                        <div class="gallery-thumb">
+                            <img src="images/2025/nature_walk_thumb.jpg" alt="Прогулка по лесу" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Прогулка по лесу</h4>
+                            <p>Изучение природы и сбор гербария.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> 17 июля 2025</span>
+                        </div>
+                    </a>
+
+                    <!-- Фото 5 -->
+                    <a href="images/2025/bible_study.jpg" class="gallery-item" data-category="photo activities" data-subtitle="Библейские занятия">
+                        <div class="gallery-thumb">
+                            <img src="images/2025/bible_study_thumb.jpg" alt="Библейские занятия" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Библейские занятия</h4>
+                            <p>Изучение Слова в маленьких группах.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> 21 июля 2025</span>
+                        </div>
+                    </a>
+
+                    <!-- Видео 3 -->
+                    <a href="https://www.youtube.com/watch?v=example3" class="gallery-item video-item" data-category="video activities" data-subtitle="Финальный концерт">
+                        <div class="gallery-thumb">
+                            <div class="video-thumb">
+                                <img src="images/2025/final_concert_thumb.jpg" alt="Финальный концерт" loading="lazy">
+                                <div class="video-play">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="gallery-overlay">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Финальный концерт</h4>
+                            <p>Выступления отрядов и награждение участников.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> 24 июля 2025</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="gallery-load-more">
+                    <button class="btn btn-outline">
+                        <i class="fas fa-plus"></i> Показать еще 12 фото
+                    </button>
+                </div>
+            </div>
+
+            <!-- Галерея 2024 -->
+            <div class="year-gallery" id="gallery-2024">
+                <div class="gallery-header">
+                    <h2><i class="fas fa-sun"></i> Выезд 2024</h2>
+                    <p class="gallery-subtitle">"Путешествие веры" - 15-25 июля 2024</p>
+                </div>
+
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="photo">Фото</button>
+                    <button class="filter-btn" data-filter="video">Видео</button>
+                </div>
+
+                <div class="gallery-grid" id="lightgallery-2024">
+                    <!-- Пример для 2024 -->
+                    <a href="images/2024/group.jpg" class="gallery-item" data-category="photo">
+                        <div class="gallery-thumb">
+                            <img src="images/2024/group_thumb.jpg" alt="Группа 2024" loading="lazy">
+                            <div class="gallery-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="gallery-info">
+                            <h4>Команда 2024</h4>
+                            <p>Наша дружная команда вожатых и детей.</p>
+                            <span class="gallery-date"><i class="far fa-calendar"></i> 20 июля 2024</span>
+                        </div>
+                    </a>
+                    <!-- Добавьте больше элементов по аналогии -->
+                </div>
+            </div>
+
+            <!-- Галерея 2023 -->
+            <div class="year-gallery" id="gallery-2023">
+                <div class="gallery-header">
+                    <h2><i class="fas fa-heart"></i> Выезд 2023</h2>
+                    <p class="gallery-subtitle">"Сердце к сердцу" - 10-20 июля 2023</p>
+                </div>
+                <!-- Содержимое аналогично -->
+            </div>
+
+            <!-- Галерея 2022 -->
+            <div class="year-gallery" id="gallery-2022">
+                <div class="gallery-header">
+                    <h2><i class="fas fa-hands-praying"></i> Выезд 2022</h2>
+                    <p class="gallery-subtitle">"Возрождение" - 12-22 июля 2022</p>
+                </div>
+                <!-- Содержимое аналогично -->
+            </div>
+
+            <!-- Галерея 2021 -->
+            <div class="year-gallery" id="gallery-2021">
+                <div class="gallery-header">
+                    <h2><i class="fas fa-star"></i> Выезд 2021</h2>
+                    <p class="gallery-subtitle">"Новая надежда" - 14-24 июля 2021</p>
+                </div>
+                <!-- Содержимое аналогично -->
+            </div>
+
+            <!-- Архив 2015-2020 -->
+            <div class="year-gallery" id="gallery-older">
+                <div class="gallery-header">
+                    <h2><i class="fas fa-history"></i> Архив 2015-2020</h2>
+                    <p class="gallery-subtitle">Наши первые выезды и становление традиций</p>
+                </div>
+
+                <div class="archive-years">
+                    <button class="archive-year-btn" data-year="2020">2020</button>
+                    <button class="archive-year-btn" data-year="2019">2019</button>
+                    <button class="archive-year-btn" data-year="2018">2018</button>
+                    <button class="archive-year-btn" data-year="2017">2017</button>
+                    <button class="archive-year-btn" data-year="2016">2016</button>
+                    <button class="archive-year-btn" data-year="2015">2015</button>
+                </div>
+
+                <div class="archive-grid">
+                    <div class="archive-item">
+                        <div class="archive-thumb">
+                            <img src="images/archive/2019_thumb.jpg" alt="2019 год" loading="lazy">
+                            <div class="archive-year">2019</div>
+                        </div>
+                        <h4>Выезд 2019</h4>
+                        <p>"Сила в единстве" - 135 участников</p>
+                    </div>
+                    <!-- Добавьте больше архивных годов -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Видео-плейлист -->
+        <section class="section bg-light">
+            <div class="section-header">
+                <h2><i class="fas fa-film"></i> Видеоплейлист</h2>
+                <p class="section-subtitle">Лучшие видео с наших выездов</p>
+            </div>
+
+            <div class="video-playlist">
+                <div class="main-video">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/example_main" 
+                                title="Основное видео выезда" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>ДХВ "Твоя Церковь" 2024 - Итоговый ролик</h3>
+                        <p>10 дней приключений, дружбы и духовного роста в одном видео</p>
+                    </div>
+                </div>
+
+                <div class="playlist-items">
+                    <div class="playlist-item active">
+                        <div class="playlist-thumb">
+                            <img src="images/thumbnails/main_video.jpg" alt="Итоговый ролик">
+                            <div class="playlist-duration">15:42</div>
+                        </div>
+                        <div class="playlist-info">
+                            <h4>Итоговый ролик 2024</h4>
+                            <p>Лучшие моменты выезда</p>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="playlist-thumb">
+                            <img src="images/thumbnails/music_video.jpg" alt="Музыкальное видео">
+                            <div class="playlist-duration">4:32</div>
+                        </div>
+                        <div class="playlist-info">
+                            <h4>Музыкальное видео</h4>
+                            <p>Песни и прославление</p>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="playlist-thumb">
+                            <img src="images/thumbnails/interviews.jpg" alt="Интервью">
+                            <div class="playlist-duration">8:15</div>
+                        </div>
+                        <div class="playlist-info">
+                            <h4>Интервью с участниками</h4>
+                            <p>Рассказы детей и вожатых</p>
+                        </div>
+                    </div>
+
+                    <div class="playlist-item">
+                        <div class="playlist-thumb">
+                            <img src="images/thumbnails/behind_scenes.jpg" alt="За кадром">
+                            <div class="playlist-duration">6:48</div>
+                        </div>
+                        <div class="playlist-info">
+                            <h4>За кадром</h4>
+                            <p>Как создавался выезд</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Поделиться воспоминаниями -->
+        <section class="section">
+            <div class="section-header">
+                <h2><i class="fas fa-share-alt"></i> Поделитесь воспоминаниями</h2>
+                <p class="section-subtitle">У вас есть фото или видео с наших выездов? Присылайте!</p>
+            </div>
+
+            <div class="share-options">
+                <div class="share-option">
+                    <i class="fab fa-google-drive"></i>
+                    <h4>Google Диск</h4>
+                    <p>Загрузите файлы в общую папку</p>
+                    <a href="https://drive.google.com/drive/folders/example" class="btn btn-small" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Перейти
+                    </a>
+                </div>
+
+                <div class="share-option">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <h4>Облако</h4>
+                    <p>Используйте пароль для загрузки</p>
+                    <button class="btn btn-small" id="showPasswordBtn">
+                        <i class="fas fa-key"></i> Получить пароль
+                    </button>
+                </div>
+
+                <div class="share-option">
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>Отправьте на media@tvoya-cerkov.ru</p>
+                    <a href="mailto:media@tvoya-cerkov.ru" class="btn btn-small">
+                        <i class="fas fa-paper-plane"></i> Написать
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно для видео -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-video">
+                <iframe id="modalVideo" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-mountain-sun"></i>
+                        <div>
+                            <h3>ДХВ "Твоя Церковь"</h3>
+                            <p>Детский христианский выезд</p>
+                        </div>
+                    </div>
+                    <p class="footer-text">Сохраняем воспоминания с 2010 года</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Навигация</h4>
+                    <a href="index.html">Главная</a>
+                    <a href="children.html">Детям</a>
+                    <a href="staff.html">Сотрудникам</a>
+                    <a href="media.html">Медиаархив</a>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon vk"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-icon telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 ДХВ "Твоя Церковь". Все права защищены.</p>
+                <p>Фото и видео принадлежат участникам выездов</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключаем LightGallery для красивого просмотра -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/plugins/video/lg-video.min.js"></script>
+    
+    <script src="js/script.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+</html>
