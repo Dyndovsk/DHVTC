@@ -51,6 +51,7 @@
             <div class="categories">
                 <button class="category-btn active" data-category="all">Все вещи</button>
                 <button class="category-btn" data-category="clothes">Одежда</button>
+                <button class="category-btn" data-category="shoes">Обувь</button>
                 <button class="category-btn" data-category="hygiene">Гигиена</button>
                 <button class="category-btn" data-category="other">Разное</button>
             </div>
@@ -116,63 +117,105 @@
                     </div>
                 </div>
 
-                <!-- Гигиена -->
-                <div class="checklist-category" data-category="hygiene">
+                <!-- Обувь -->
+                <div class="checklist-category" data-category="shoes">
                     <h3><i class="fas fa-soap"></i> Гигиена</h3>
                     <div class="checklist">
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item8">
+                            <label for="item8">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Спортивная обувь для спортивных игр</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item9">
+                            <label for="item9">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Открытая обувь - сандалии, босоножки (без каблуков)</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item10">
+                            <label for="item10">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Обувь на случай дождя</span>
+                            </label>
+                        </div>
                         <div class="checklist-item">
                             <input type="checkbox" id="item11">
                             <label for="item11">
                                 <span class="checkmark"></span>
-                                <span class="item-text">Зубная щетка и паста</span>
+                                <span class="item-text">Обувь, удобная для дома</span>
                             </label>
                         </div>
                         <div class="checklist-item">
                             <input type="checkbox" id="item12">
                             <label for="item12">
                                 <span class="checkmark"></span>
-                                <span class="item-text">Мыло/гель для душа</span>
+                                <span class="item-text">Тапочки для душа</span>
                             </label>
                         </div>
+                    </div>
+                </div>
+                
+                <!-- Гигиена -->
+                <div class="checklist-category" data-category="hygiene">
+                    <h3><i class="fas fa-soap"></i> Гигиена</h3>
+                    <div class="checklist">
                         <div class="checklist-item">
                             <input type="checkbox" id="item13">
                             <label for="item13">
                                 <span class="checkmark"></span>
-                                <span class="item-text">Шампунь</span>
+                                <span class="item-text">Зубная щетка (желательно в футляре) и паста</span>
                             </label>
                         </div>
                         <div class="checklist-item">
                             <input type="checkbox" id="item14">
                             <label for="item14">
                                 <span class="checkmark"></span>
-                                <span class="item-text">Мочалка</span>
+                                <span class="item-text">Мыло/гель для душа, мочалка, полотенца (лучше 2 шт)</span>
                             </label>
                         </div>
                         <div class="checklist-item">
                             <input type="checkbox" id="item15">
                             <label for="item15">
                                 <span class="checkmark"></span>
-                                <span class="item-text">Полотенце (2-3 шт)</span>
-                                <span class="item-note">Для душа и для пляжа</span>
+                                <span class="item-text">Шампунь в небольшой пластиковой бутылке, которая хорошо закрывается</span>
                             </label>
                         </div>
                         <div class="checklist-item">
                             <input type="checkbox" id="item16">
                             <label for="item16">
                                 <span class="checkmark"></span>
-                                <span class="item-text">Расческа/зеркало</span>
+                                <span class="item-text">Расческа. Заколки и резинки для девочек</span>
                             </label>
                         </div>
                         <div class="checklist-item">
                             <input type="checkbox" id="item17">
                             <label for="item17">
                                 <span class="checkmark"></span>
-                                <span class="item-text">Крем от солнца (SPF 30+)</span>
+                                <span class="item-text">Платки носовые, желательно одноразовые</span>
                             </label>
                         </div>
                         <div class="checklist-item">
                             <input type="checkbox" id="item18">
                             <label for="item18">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Средство от комаров, защитный крем от солнца</span>
+                                <span class="item-note">Будет на всех, но можно взять</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item19">
+                            <label for="item19">
+                                <span class="checkmark"></span>
+                                <span class="item-text">Крем от солнца (SPF 30+)</span>
+                            </label>
+                        </div>
+                        <div class="checklist-item">
+                            <input type="checkbox" id="item20">
+                            <label for="item20">
                                 <span class="checkmark"></span>
                                 <span class="item-text">Средство от комаров</span>
                             </label>
@@ -184,20 +227,6 @@
                 <div class="checklist-category" data-category="other">
                     <h3><i class="fas fa-star"></i> Разное</h3>
                     <div class="checklist">
-                        <div class="checklist-item">
-                            <input type="checkbox" id="item19">
-                            <label for="item19">
-                                <span class="checkmark"></span>
-                                <span class="item-text">Рюкзак/сумка</span>
-                            </label>
-                        </div>
-                        <div class="checklist-item">
-                            <input type="checkbox" id="item20">
-                            <label for="item20">
-                                <span class="checkmark"></span>
-                                <span class="item-text">Бутылка для воды</span>
-                            </label>
-                        </div>
                         <div class="checklist-item">
                             <input type="checkbox" id="item21">
                             <label for="item21">
