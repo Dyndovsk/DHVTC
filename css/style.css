@@ -1221,3 +1221,63 @@ body {
     font-size: 0.9rem;
     color: var(--gray);
 }
+
+/* Стили для приглашения внутри карточки события */
+.event-info .invitation-action {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius);
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+}
+
+.bg-gradient .event-info .action-text {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.bg-gradient .download-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.bg-gradient .download-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+.bg-gradient .download-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    border-color: white;
+}
+
+.bg-gradient .download-btn i {
+    font-size: 1.5rem;
+}
+
+.bg-gradient .download-btn span {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-gradient .download-btn strong {
+    font-size: 1rem;
+}
+
+.bg-gradient .download-btn small {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 2px;
+}
