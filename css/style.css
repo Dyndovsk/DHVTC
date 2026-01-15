@@ -1153,3 +1153,71 @@ body {
         flex-direction: column;
     }
 }
+
+.simple-invitation {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.simple-invitation h2 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.download-options {
+    max-width: 500px;
+    margin: 2rem auto 0;
+}
+
+.download-option {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background: var(--light);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.download-option:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow);
+}
+
+.download-option.pdf {
+    border-left: 4px solid #e74c3c;
+}
+
+.download-option.word {
+    border-left: 4px solid #2b579a;
+}
+
+.download-option i:first-child {
+    font-size: 1.5rem;
+}
+
+.download-option i:last-child {
+    margin-left: auto;
+    color: var(--primary);
+}
+
+.download-option div {
+    flex: 1;
+    text-align: left;
+}
+
+.download-option strong {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.download-option span {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
