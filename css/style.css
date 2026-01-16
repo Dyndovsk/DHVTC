@@ -1281,3 +1281,52 @@ body {
     opacity: 0.8;
     margin-top: 2px;
 }
+
+.schedule {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.schedule h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.day-schedule {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.day-schedule h3 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.day-schedule ul {
+    list-style: none;
+    padding: 0;
+}
+
+.day-schedule li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+}
+
+.day-schedule li:last-child {
+    border-bottom: none;
+}
+
+.day-schedule li strong {
+    min-width: 120px;
+    color: #2c3e50;
+}
